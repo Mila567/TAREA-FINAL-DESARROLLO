@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!--CABECERA-->
+    <header id="logo">
+        <!--ENCABEZADO LOGO-->
+        <h1>
+            JickStar
+        </h1>
+        <h2>Maquillaje de alta calidad a tus manos</h2>
+    </header>
+    <main>
+<!--NAVEGACION-->
+<nav class="--ENCABEZADO">
+    <!--LISTADO DE LINKS DE NAVEGACION-->
+<ul>
+    <li><a href="carrito.html" target="_blank">CARRITO DE COMPRAS</a></li>
+    <li><a href="login.html" target="_self">LOGIN</a></li>
+    <LI><a href="Contacto.html"target="_blank">CONTACTO</a></LI>
+    <LI><a href="Nosotros.html"target="_blank">NOSOTROS</a></LI>
+</ul>
+</nav>
+    <!--SECCION DE FORMULARIO-->
+    <section id="formUsuario">
+        <h1>Contactenos</h1>
+        <form action="RegistroCompleto.html" method="get">
+            <!--CADA LISTADO DE INPUTS NECESARIOS-->
+            <div>
+                <!--CASILLA DE NOMBRE-->
+                <label for="txtNombre">Ingrese su nombre</label>
+                <input type="text" name="txtNombre" id="txtNombre" maxlength="24" autocomplete="off" required >
+            </div>
+            <div>
+                <!--CASILLA DE APELLIDO-->
+                <label for="txtApellido">Ingrese sus apellidos</label>
+                <input type="text" name="txtApellido" id="txtApellido" maxlength="48" required autocomplete="off">
+            </div>
+            <!--CASILLA DE CORREO ELECTRONICO-->
+            <div>
+                <label for="txtCorreo">Ingrese su correo electronico</label>
+                <input type="text" name="txtCorreo" id="txtCorreo" maxlength="96" autocomplete="off"requeried>
+            </div>
+            <!--CASILLA DE NUMERO TELEFONICO-->
+            <div>
+                <label for="txtTelefono">Ingrese su numero telefonico</label>
+                <input type="tel" name="txtTelefono" id="txtTelefono" maxlength="9"requeried>
+            </div>
+            <!--SELECCIONAR LA OPCION SOBRE QUE TIPO DE ASUNTO-->
+            <div>
+                <label for="txtAsunto">Asunto del correo</label>
+                <select name="txtAsunto" id="txtAsunto" required>
+                    <option value="">Seleccione el asunto</option>
+                    <option value="Compramayor">Compras por Mayor</option>
+                    <option value="ConsultaEstadPed">Consulta por el Estado de su pedido</option>
+                    <option value="Quejasdeproducto">Quejas sobre el producto/Entrega del pedido</option>
+                    <option value="ConsultaGeneral">Consulta General</option>
+                </select>
+            </div>
+            <!--CASILLA USANDO TEXTAREA PARA DETALLE DE ASUNTO-->
+            <div>
+                <label for="txtDetalle">Detalle del asunto:</label><br>
+                <textarea name="txtDetalle" id="txtDetalle" rows="10" required></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="bolAutorizo"id="bolAutorizo" required>
+                <label for="bolAutorizo">Autorizo el envío de publicidad e información sobre JickStar</label>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+    <section id="Ubicacion">
+        <div>
+            <span>Nos Ubicamos en la tienda 6, segundo piso al costado la empresa Cybertel Telecomunicaciones</>
+            <span>Jr.Francisco Graña 166, La Victoria, Lima-Lima</span>
+        </div>
+        <div>
+            <iframe id="mapa" width="500px" height="250px"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.427008634558!2d-77.0131138853257!3d-12.082892845863094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c991e56eb8b5%3A0xd9e02d74d2a58de0!2sCYBERTEL%20TECNOLOGIA%20Y%20SERVICIOS%20S.R.L!5e0!3m2!1ses-419!2spe!4v1680320967515!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+        </div>
+    </section>
+</main>
+<footer class="piedepagina">
+    <!--SECCION PIE DE PAGINA-->
+    <section>
+        <li><a href="Nosotros.html" target="_blank">Nosotros</a></li>
+        <li><a href="Contacto.html" target="_blank">Nuestras sedes</a></li>
+        <li><a href="https://www.mininter.gob.pe/librodereclamacionesvirtual" target="_blank">Libro de Reclamaciones</a></li>
+        <li><a href="https://es-la.facebook.com/">Siguenos en nuestras paginas</a></li>
+        </section>
+</footer>
+</body>
+</html>

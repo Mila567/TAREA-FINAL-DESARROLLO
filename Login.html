@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+      <!--Encabezado-->
+      <header id="logo">
+        <!--TITULO 1-->
+        <h1>
+            JickStar
+        </h1>
+        <h2>Maquillaje de alta calidad a tus manos</h2>
+    </header>
+    <!--NAVEGACION-->
+    <nav style="text-align: center;">
+        <!--LISTADO DE LINKS DE NAVEGACION-->
+    <ul>
+        <li><a href="carrito.html" target="_blank">CARRITO DE COMPRAS</a></li>
+        <li><a href="login.html" target="_self">LOGIN</a></li>
+        <LI><a href="Contacto.html"target="_blank">CONTACTO</a></LI>
+        <LI><a href="Nosotros.html"target="_blank">NOSOTROS</a></LI>
+    </ul>
+    </nav>
+    <main style="height: 500px; width:500px;">
+         <!--SECCION DE FORMULARIO-->
+    <section id="formUsuario">
+        <h1>Registrate</h1>
+        <form action="RegistroCompleto.html" method="get">
+            <!--CADA LISTADO DE INPUTS NECESARIOS-->
+            <div>
+                <!--CASILLA DE NOMBRE-->
+                <label for="txtNombre">Ingrese su nombre</label>
+                <input type="text" name="txtNombre" id="txtNombre" maxlength="24" autocomplete="off" required >
+            </div>
+            <div>
+                <!--CASILLA DE APELLIDO-->
+                <label for="txtApellido">Ingrese sus apellidos</label>
+                <input type="text" name="txtApellido" id="txtApellido" maxlength="48" required autocomplete="off">
+            </div>
+            <!--CASILLA DE CORREO ELECTRONICO-->
+            <div>
+                <label for="txtCorreo">Ingrese su correo electronico</label>
+                <input type="text" name="txtCorreo" id="txtCorreo" maxlength="96" autocomplete="off"requeried>
+            </div>
+            <!--CASILLA DE NUMERO TELEFONICO-->
+            <div>
+                <label for="txtTelefono">Ingrese su numero telefonico</label>
+                <input type="tel" name="txtTelefono" id="txtTelefono" maxlength="9"requeried>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+    </main>
+    <footer class="piedepagina">
+        <!--SECCION PIE DE PAGINA-->
+        <section>
+            <li><a href="Nosotros.html" target="_blank">Nosotros</a></li>
+            <li><a href="Contacto.html" target="_blank">Nuestras sedes</a></li>
+            <li><a href="https://www.mininter.gob.pe/librodereclamacionesvirtual" target="_blank">Libro de Reclamaciones</a></li>
+            <li><a href="https://es-la.facebook.com/">Siguenos en nuestras paginas</a></li>
+            </section>
+    </footer>
+</body>
+</html>
