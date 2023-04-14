@@ -12,31 +12,32 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link type="application/action">
     
+    <link rel="stylesheet" href="Styles.css">
 
 </head>
 
 <body>
 
-    <!--Encabezado-->
-    <header id="">
-        <!--TITULO 1-->
-        <h1 class="display-1">
+     <!--CABECERA-->
+     <header id="logo">
+        <!--ENCABEZADO LOGO-->
+        <h1>
             JickStar
         </h1>
         <h2>Maquillaje de alta calidad a tus manos</h2>
-
     </header>
+    <main>
     <!--NAVEGACION-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+    <nav  class="navbar navbar-expand-lg bg-body-tertiary " >
+        <div class="container-lg text-center">
      
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Carrito de Compras</a>
+                <a class="nav-link active" aria-current="page" id="a_Carrito_ref">Carrito de Compras</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="Login.html">Login</a>
@@ -50,14 +51,15 @@
             </ul>
           </div>
         </div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ventanacarrito">
+          Carrito
+        </button>
       </nav>
         <!--BOTON DEL CARRITO-->
         
     </nav>
     <!-- BOTON DEL CARRITO -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ventanacarrito">
-    Carrito
-  </button>
+
   
   <!--AGREGAR MODAL DEL CARRITO-->
   <div id="ventanacarrito"class="modal fade"tabindex="-1"ria-hidden="true">
@@ -72,87 +74,82 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar Cambios</button>
+          <button type="button" class="btn btn-primary"id="a_Carrito_ref">Ir al carrito</button>
         </div>
       </div>
     </div>
   </div>
     <!--MENU PRINCIPAL-->
-    <main>
+    <main class="container-lg ">
         <!--SECCION-->
-        <section id="catalogo" class="row">
+        <section class="row row-cols" >
             <!--ARTICULO 1-->
-            <article class="col-3" >
+            <article class="col-3 card body">
                 <picture>
-                    <img class="img-fluid" src="Imagenes/Agua-de-jingseng.jpg">
-                </picture>
-                    <h3>Agua de Jingseng Marca POOL</h3>
+                    <img class="img-fluid card-img-top" src="Imagenes/serum-tiam.jpg"></picture>
+                    
+                    <h5 class="card-title">Agua de Jingseng Marca POOL</h5>
                     <p>
-                    <br><span class="PrecioOriginal">$.150.00<span>  <span class="PrecioDescuento">-50%</span>
+                    <span >$.150.00<span> 
+                    <br><span class="PrecioDescuento">-50%</span>
                     <br><span class="precioFinal">$75.00</span>
                     <br>
                 </p>
                      <button class="btn btn-secondary">Agregar al Carrito</button>
-    
+                   
             </article>
             <!--ARTICULO 2-->
-            <article class="col-3">
+            <article class="col-3 card body">
                 <picture>
-                    <img class="img-fluid" src="Imagenes/aqua-balm.jpg"></picture>
-                    <br>
-                    <h3>Aquam BALM</h3>
+                    <img class="img-fluid card-img-top" src="Imagenes/aqua-balm.jpg"></picture>
+                    <h5 class="card-title">Aquam BALM</h5>
                     <p>
-                    <br><span>$.120.00</span><br><span class="PrecioDescuento">-30%</span>
+                    <span>$.120.00</span>
+                    <br><span class="PrecioDescuento">-30%</span>
                     <br><span class="precioFinal">$94.00</span>
                     <br>
                 </p>
                    
                     <button class="btn btn-secondary">Agregar al Carrito</button>
                    
-                </picture>
             </article>
             <!--ARTICULO 3-->
-            <article class="col-3">
+            <article class="col-3 card body">
                 <picture>
-                    <img class="img-fluid" src="Imagenes/base-unleisha.jpg"></picture>
-                    <br>
-                    <h3>Base UnLeisha</h3>
+                    <img class="img-fluid card-img-top" src="Imagenes/base-unleisha.jpg"></picture>
+                    <h5 class="card-title">Base UnLeisha</h5>
                     <p>
-                    <br><span>$40.00</span>
+                  <span>$40.00</span>
                     <br><span class="PrecioDescuento">-20%</span>
                     <br><span class="precioFinal">$32.00</span>
                     <br>
                 </p>
                     <button class="btn btn-secondary">Agregar al Carrito</button>
-                   
-               
-                </picture>
+             
             </article>
             <!--ARTICULO 4-->
-            <article class="col-3">
+            <article class="col-3 card body">
                 <picture>
-                    <img class="img-fluid" src="Imagenes/beaty-joseon-seumhidra.jpg"></picture>
-                    <br>
-                    <h3>Serum Joseon Marca JOSEON</h3>
+                    <img class="img-fluid card-img-top" src="Imagenes/beaty-joseon-seumhidra.jpg"></picture>
+                    <h5 class="card-title">Serum Joseon Marca JOSEON</h5>
                     <p>
-                    <br><span>$200.00</span>
+                    <span>$200.00</span>
                     <br><span class="PrecioDescuento">-20%</span>
                     <br><span class="precioFinal">$160.00</span>
                     <br>
                 </p>
                         <button class="btn btn-secondary">Agregar al Carrito</button>
                  
-                
-                </picture>
+            
             </article>
             <!--ARTICULO 5-->
-            <article  class="col-3">
+            <article  class="col-3 card body ">
                 <picture>
-                    <img class="img-fluid" src="Imagenes/birch-suice.jpg"></picture>
-                    <br>
-                    <h3>Birch Suice Vitamin C</h3>
+                    <img class="img-fluid card-img-top" src="Imagenes/birch-suice.jpg"></picture>
+                  
+                    <h5 class="card-title">Birch Suice Vitamin C</h5>
                     <p>
-                    <br><span>$.180.00</span>
+                   <span>$.180.00</span>
                     <br><span class="PrecioDescuento">-10%</span>
                     <br><span class="precioFinal">$162.00</span>
                     <br>
@@ -160,16 +157,16 @@
                         <button class="btn btn-secondary">Agregar al Carrito</button>
                    
                
-                </picture>
             </article>
             <!--ARTICULO 6-->
-            <article class="col-3">
+            <article class="col-3 card body">
                 <picture>
-                    <img class="img-fluid" src="Imagenes/bloqueador-aqua-50sfp.jpg"></picture>
-                    <br>
-                    <h3>Bloqueador AQUA 50 SFP</h3>
+                    <img class="img-fluid card-img-top" src="Imagenes/bloqueador-aqua-50sfp.jpg"></picture>
+                 
+               
+                    <h5 class="card-title">Bloqueador AQUA 50 SFP</h5>
                     <p>
-                    <br><span>$.159.00</span>
+                    <span>$.159.00</span>
                     <br><span class="PrecioDescuento">-10%</span>
                     <br><span class="precioFinal">$144.00</span>
                     <br>
@@ -180,13 +177,13 @@
                 </picture>
             </article>
             <!--ARTICULO 7-->
-            <article class="col-3">
+            <article class="col-3 card body">
                 <picture>
-                    <img class="img-fluid" src="Imagenes/colagen-macqueen-new-york.jpg"></picture>
-                    <br>
-                    <h3>Crema Colageno marca MACQUEEN NEW YORK</h3>
+                    <img class="img-fluid card-img-top" src="Imagenes/colagen-macqueen-new-york.jpg"></picture>
+                  
+                    <h5 class="card-title">Crema Colageno marca MACQUEEN NEW YORK</h5>
                     <p>
-                    <br><span>$.189.00</span>
+                    <span>$.189.00</span>
                     <br><span class="PrecioDescuento">-10%</span>
                     <br><span class="precioFinal">$171.00</span>
                     <br>
@@ -196,14 +193,14 @@
                 </picture>
             </article>
             <!--ARTICULO 8-->
-            <article  class="col-3">
+            <article  class="col-3 card body">
                 <picture>
-                    <img class="img-fluid" src="Imagenes/iunik-serum vvitamin.jpg">
+                    <img class="img-fluid card-img-top" src="Imagenes/iunik-serum vvitamin.jpg">
                 </picture>
-                <br>
-                <h3>Serum IUNIK VitaminicK</h3>
+             
+                <h5 class="card-title">Serum IUNIK VitaminicK</h5>
                 <p>
-                    <br><span>$.350.00</span>
+                   <span>$.350.00</span>
                     <br><span class="PrecioDescuento">-25%</span>
                     <br><span class="precioFinal">$262.50</span>
                     <br>
@@ -212,13 +209,13 @@
                 
             </article>
             <!--ARTICULO 9-->
-            <article  class="col-3">
+            <article  class="col-3 card body">
                 <picture>
-                    <img class="img-fluid" src="Imagenes/mascarilla-arcilla-pink.jpg"></picture>
-                    <br>
-                    <h3>Mascarilla Arcilla Pink</h3>
+                    <img class="img-fluid card-img-top" src="Imagenes/mascarilla-arcilla-pink.jpg"></picture>
+             
+                    <h5 class="card-title">Mascarilla Arcilla Pink</h5>
                     <p>
-                    <br><span>$.110.00</span>
+                    <span card-title>$.110.00</span>
                     <br><span class="PrecioDescuento">-15%</span>
                     <br><span class="precioFinal">$93.50</span>
                     <br>
@@ -226,9 +223,53 @@
                             <button class="btn btn-secondary">Agregar al Carrito</button>
                     
             </article>
+            <!--ARTICULO 10-->
+            <article  class="col-3 card">
+                <picture>
+                    <img class="img-fluid card-img-top" src="Imagenes/peripera-tinte.jpg"></picture>
+           
+                    <h5 class="card-title">Tinte Peripera</h5>
+                    <p>
+                    <span class="card-text">$.120.00</span>
+                    <br><span class="PrecioDescuento">-15%</span>
+                    <br><span class="precioFinal">$103.50</span>
+                    <br>
+                </p>
+            <button class="btn btn-secondary">Agregar al Carrito</button>
+                    
+            </article>
+            <!--ARTICULO 11-->
+            <article  class="col-3 card">
+                <picture>
+                    <img class="img-fluid card-img-top" src="Imagenes/hidratante-holika.jpg"></picture>
+      
+                    <h5 class="card-title">Hidratante Holika</h5>
+                    <p>
+                   <span>$.200.00</span>
+                    <br><span class="PrecioDescuento">-25%</span>
+                    <br><span class="precioFinal">$150.00</span>
+                    <br>
+                </p>
+            <button class="btn btn-secondary">Agregar al Carrito</button>
+                    
+            </article>
+            <!--ARTICULO 12-->
+            <article  class="col-3 card">
+                <picture >
+                    <img class="img-fluid card-img-top" src="Imagenes/numbzin-serum.jpg"></picture>
+                  
+                    <h5 class="card-title">Numbzin serum</h5>
+                    <p>
+                   <span>$.250.00</span>
+                    <br><span class="PrecioDescuento">-10%</span>
+                    <br><span class="precioFinal">$225.00</span>
+                    <br>
+                </p>
+            <button class="btn btn-secondary">Agregar al Carrito</button>
+                    
+            </article>
 
          
-            </article>
         </section>
     </main>
     <footer class="piedepagina">

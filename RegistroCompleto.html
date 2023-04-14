@@ -6,40 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Realizado</title>
     <link rel="stylesheet" href="Styles.css">
+    <!--Cargando la libreria de Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="application/action">
 </head>
 <body>
-    <!--Encabezado-->
+     <!--Encabezado-->
+      <!--CABECERA-->
     <header id="logo">
-        <!--TITULO 1-->
+        <!--ENCABEZADO LOGO-->
         <h1>
             JickStar
         </h1>
         <h2>Maquillaje de alta calidad a tus manos</h2>
-      
     </header>
+    <main>
     <!--NAVEGACION-->
-    <nav style="text-align: center;">
-        <!--LISTADO DE LINKS DE NAVEGACION-->
-    <ul>
-        <li><a href="carrito.html" target="_blank">CARRITO DE COMPRAS</a></li>
-        <li><a href="login.html" target="_self">LOGIN</a></li>
-        <LI><a href="Contacto.html"target="_blank">CONTACTO</a></LI>
-        <LI><a href="Nosotros.html"target="_blank">NOSOTROS</a></LI>
-    </ul>
-    </nav>
+    <nav  class="navbar navbar-expand-lg bg-body-tertiary " >
+        <div class="container-lg text-center">
+     
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="a_Carrito_ref">Carrito de Compras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"  href="Contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <!--SECCION DE ENVIADO OK-->
     <section >
         <!--MENSAJE ENVIADO OK-->
-        <div class="okEnviado">
-            <p >Correo enviado, Se le enviará un correo de respuesta dentro de 3 a 5 dias hábiles</p>
+        <div class="container-lg text-center ">
+            <h3 >Correo enviado, Se le enviará un correo de respuesta dentro de 3 a 5 dias hábiles</h3>
         </div>
         <!--VOLVER ATRAS-->
-        <div class="volveratras">
-            <li>
-                <a href="index.html">Volver Atrás</a>
-            </li>
+        <div class="container-lg btn-secondary">
+          <button onclick="location.href='index.html'">Atras</button>
         </div>
-    </main>
     <footer class="piedepagina">
         <!--SECCION PIE DE PAGINA-->
         <section>
@@ -49,5 +65,10 @@
             <li><a href="https://es-la.facebook.com/">Siguenos en nuestras paginas</a></li>
             </section>
     </footer>
+
+    <!--llamar al boostrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--Llamar al Bootstrap personalizado-->
+    <script src="acttion.js"></script>
 </body>
 </html>

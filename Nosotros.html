@@ -7,52 +7,73 @@
     <link rel="stylesheet"type="text/css" href="Styles.csss">
     <title>Nosotros</title>
     <linK rel="stylesheet" href="Styles.css">
+        <!--Cargando la libreria de Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="application/action">        
 </head>
 <body>
+     <!--Encabezado-->
+      <!--CABECERA-->
     <header id="logo">
-         <!--ENCABEZADO LOGO-->
-         <h1>
+        <!--ENCABEZADO LOGO-->
+        <h1>
             JickStar
         </h1>
-        <!--SUBCABEZADO-->
         <h2>Maquillaje de alta calidad a tus manos</h2>
     </header>
+    <main>
     <!--NAVEGACION-->
-    <nav style="text-align: center;">
-        <!--LISTADO DE LINKS DE NAVEGACION-->
-    <ul>
-        <li><a href="carrito.html" target="_blank">CARRITO DE COMPRAS</a></li>
-        <li><a href="login.html" target="_self">LOGIN</a></li>
-        <LI><a href="Contacto.html"target="_blank">CONTACTO</a></LI>
-        <LI><a href="Nosotros.html"target="_blank">NOSOTROS</a></LI>
-    </ul>
-    </nav>
+    <nav  class="navbar navbar-expand-lg bg-body-tertiary " >
+        <div class="container-lg text-center">
+     
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="a_Carrito_ref">Carrito de Compras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"  href="Contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <main style="text-align: center;">
         <!--ARTICULO-->
-        <article id="infor">
+        <article class="container" >
             <!--SUBTITULO-->
             <h1>Nosotros</h1>
             <!--SECCION DE INFORMACION-->
-            <section>
+            <section class="container-lg">
                 <!--PRIMER PARRAFO-->
-                <p>
+                <p class="lead">
                 En la última década, el maquillaje coreano y los productos para el
                 cuidado de la piel se han apoderado del mundo, dando lugar a una tendencia 
                 llamada K-Beauty. </p>
                 <!--SEGUNDO PARRAFO-->
-                <p>¿Cuál es el secreto detrás de su tremendo éxito? Se debe a la combinación de
+                <p class="lead">¿Cuál es el secreto detrás de su tremendo éxito? Se debe a la combinación de
                      los cuatro factores que más valoran los consumidores coreanos: innovación,
                       ingredientes naturales, empaques atractivos y precios razonables. Si estás
                        buscando exactamente lo mismo, ¡has venido al lugar correcto!
                 </p>
                 <!--TERCER PARRAFO-->
-                <p>JickStar.com es una tienda en línea de cosmética coreana que ofrece una amplia 
+                <p class="lead">JickStar.com es una tienda en línea de cosmética coreana que ofrece una amplia 
                 gama de productos de maquillaje y cuidado de la piel de primera calidad para personas jóvenes y sofisticadas que comparten nuestra visión de que los productos de belleza deben ser divertidos y asequibles.
                 3 beneficios de los productos coreanos de belleza
                 La cosmética coreana o cosméticos coreanos tienen mucho que ofrecer además del bajo precio. 
                 Las tres razones principales por la que usar productos K-Beauty son:
                 Ingredientes orgánicos</P>
-                <!--CUARTO PARRAFO--><p>
+                <!--CUARTO PARRAFO-->
+                <p class="lead">
                 Los consumidores de cosméticos están profundamente preocupados por lo que se ponen en la cara y cuerpo. La mayoría de las marcas coreanas prefieren usar ingredientes naturales en lugar de productos químicos agresivos, sintéticos y siliconas. Al mismo tiempo, los productos coreanos  de belleza son mucho más asequibles que sus análogos orgánicos occidentales. Así que 
                 en nuestra tienda de maquillaje de Corea, puedes comprar productos de lujo por menos.Componentes suaves. La mayoría de los coreanos tienen la piel sensible, por lo que se investiga mucho sobre cosméticos innovadores que contengan ingredientes suaves pero que sean extremadamente efectivos.
                 </p>
@@ -61,7 +82,11 @@
             <aside>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/qtp0TJBUZW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </aside><BR>
+           
         </section>
+        <div class="container-lg btn-secondary">
+          <button onclick="location.href='index.html'">Atras</button>
+        </div>
     </main>
     <footer class="piedepagina">
         <!--SECCION PIE DE PAGINA-->
@@ -72,5 +97,9 @@
             <li><a href="https://es-la.facebook.com/">Siguenos en nuestras paginas</a></li>
             </section>
     </footer>
+    <!--llamar al boostrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--Llamar al Bootstrap personalizado-->
+    <script src="acttion.js"></script>
 </body>
 </html>
