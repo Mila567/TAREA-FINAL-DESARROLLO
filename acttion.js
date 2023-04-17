@@ -5,27 +5,11 @@ let botones=window.document.querySelectorAll("#catalogo > article > button");
 botones.forEach(element => {
     element.addEventListener("click",agregarcarrito);
 });
-
-let a_Carrito_ref = window.document.querySelectorAll("#a_Carrito_ref");
-a_Carrito_ref.forEach(element => {
-    element.addEventListener("click",Llevar_a_Carrito);
-});
-
-    function Llevar_a_Carrito(){
-        GuardarDatosCarrito();
-        location.href = "Carrito.html";
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        array_carritoCompras = JSON.parse(localStorage.getItem("array_carritoCompras")) || [];
-        MostrarCarrito();
-    });
-
     /*Metodo para agreagr el producto al carrito*/
     function agregarcarrito(producto){
         /*Conseguir los datos de mi carrito */
-    let tituloproducto = producto.target.parentElement.querySelector("h3");
-    let precioProducto = producto.target.parentElement.querySelector("p");
+    let tituloproducto = producto.target.parentElement.querySelector("h5");
+    let precioProducto = producto.target.parentElement.querySelector("span");
     let imagenProducto = producto.target.parentElement.querySelector("picture");
     /*Ahora colocar en el modal*/
     let modalCuerpo = document.querySelector("#ventanacarrito > div > div > div.modal-body");
@@ -36,7 +20,7 @@ a_Carrito_ref.forEach(element => {
         if(modalCuerpo.querySelector("p").innerHTML=="Su carrito esta actualmente vacio."){
             modalCuerpo.innerHTML="";
         }
-        modalCuerpo=modalCuerpo.innerHTML+="<h3>"+tituloproducto.innerHTML+"</h3><p>"+precioProducto.innerHTML+"</p>"+imagenProducto.innerHTML+"</p>";
+        modalCuerpo=modalCuerpo.innerHTML+="<h5>"+tituloproducto.innerHTML+"</h5><>"+precioProducto.innerHTML+"</p>"+imagenProducto.innerHTML+"</p>";
         alert("Se agrego correctamente al carrito");
     
         //Se declara el objeto
@@ -49,10 +33,15 @@ a_Carrito_ref.forEach(element => {
         array_carritoCompras.push(ObjItem);
     }
 
-    function GuardarDatosCarrito() {
-        localStorage.setItem("array_carritoCompras", JSON.stringify(array_carritoCompras));
-    }
+let a_Carrito_ref = window.document.querySelectorAll("#a_Carrito_ref");
+a_Carrito_ref.forEach(element => {
+    element.addEventListener("click",Llevar_a_Carrito);
+});
 
+    function Llevar_a_Carrito(){
+        GuardarDatosCarrito();
+        location.href = "Carrito.html";
+    }
     function MostrarCarrito(){
         let Carrito_Vista_datos = "";
         let Carrito_Vista = document.querySelector("#Carrito_Vista");
@@ -61,9 +50,20 @@ a_Carrito_ref.forEach(element => {
             Carrito_Vista.innerHTML= "<p>Su carrito esta actualmente vacio.</p>";
        }else{
             array_carritoCompras.forEach(function(objItem) {
-                Carrito_Vista_datos = Carrito_Vista_datos + "<h3>"+objItem.tituloproducto+"</h3><p>"+objItem.precioProducto+"</p>"+objItem.imagenProducto+"</p>";
+                Carrito_Vista_datos = Carrito_Vista_datos + "<h5>"+objItem.tituloproducto+"</h5><p>"+objItem.precioProducto+"</p>"+objItem.imagenProducto+"</p>";
             });
             Carrito_Vista.innerHTML= Carrito_Vista_datos;
        }
-
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        array_carritoCompras = JSON.parse(localStorage.getItem("array_carritoCompras")) || [];
+        MostrarCarrito();
+    });
+
+
+
+    function GuardarDatosCarrito() {
+        localStorage.setItem("array_carritoCompras", JSON.stringify(array_carritoCompras));
+    }
+
